@@ -1,0 +1,198 @@
+/*? basic */
+
+:root {
+  --primary-color: #f9a61a;
+  --font-family: "Roboto", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family);
+}
+
+/** Navbar  */
+
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  filter: drop-shadow(2px 2px 17px rgba(249, 166, 26, 0.29));
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.navbar-brand img {
+  object-fit: contain;
+}
+
+.nav-link {
+  color: #333;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 20px;
+  transition: color 0.4s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 25px;
+  transition: 0.4s ease;
+  padding: 8px 20px;
+  letter-spacing: 0.8px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.btn-primary:hover {
+  background-color: #f79e03;
+}
+
+/** BANNER */
+
+.banner-section {
+    background-image: url('../images/BannerBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 80px 0;
+    color: #272828;
+    min-height:90vh;
+} 
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-title {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1.45;
+    margin-bottom: 30px;
+    color: #272828;
+}
+
+.banner-title .fw-bold {
+    font-weight: 700 !important;
+}
+
+.highlight-primary {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.banner-subtext {
+    font-size: 24px;
+    color: #272828;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.banner-btn {
+    background-color: var(--primary-color);
+    color: #282828;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.banner-btn:hover {
+    background-color: #e69a1d;
+}
+
+
+
+/** How It Works  */
+
+
+
+.how-it-works-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 400;
+  color: #272828;
+  margin-bottom: 10px;
+}
+
+.highlight-primary {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  color: #272828;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #757575;
+  margin-bottom: 40px;
+}
+
+.how-it-works-img {
+  background-image: url('../images/HowItWorks.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left;
+  height: 600px;
+  width: 100%;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.feature-item:last-child {
+  border-bottom: none;
+}
+
+.feature-icon {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.feature-item h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #272828;
+  margin-bottom: 5px;
+}
+
+.feature-item p {
+  font-size: 15px;
+  color: #757575;
+  margin-bottom: 0;
+}
+
+
+
+/*! responsive */
+
+@media (min-width: 992px) {
+  .navbar .btn-primary {
+    margin-left: 1rem;
+  }
+}
